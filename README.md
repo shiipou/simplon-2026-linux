@@ -7,13 +7,10 @@
 - [pwd](#pwd)
 - [cd](#cd)
 - [ping](#ping)
-<<<<<<< HEAD
-- [top | htop](#top | htop)
-=======
-- [chown] (#chown)
+- [top | htop](#top%20|%20htop)
+- [chown](#chown)
 - [cat] (#cat)
 
->>>>>>> 52a3c265be153d36520724b9c5f7e2a90ceb96da
 
 ## Commande Linux
 
@@ -131,7 +128,6 @@ Special Symbols :
 
 
 
-<<<<<<< HEAD
 ###top | htop
 
 la commande **top** permet d'afficher les processus Linux en cours d'execution.
@@ -181,5 +177,3 @@ sudo apt update
 sudo apt install htop
 ```
 
-=======
->>>>>>> 52a3c265be153d36520724b9c5f7e2a90ceb96da
