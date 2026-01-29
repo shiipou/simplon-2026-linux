@@ -16,10 +16,9 @@ Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 - [pwd](#pwd)
 - [cd](#cd)
 - [ping](#ping)
-- [top | htop](#top | htop)
 - [chown](#chown)
 - [cat](#cat)
-- [top | htop](#top%20|%20htop)
+- [top | htop](#top--htop)
 - [chown](#chown)
 - [cat](#cat)
 
