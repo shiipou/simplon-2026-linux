@@ -5,7 +5,7 @@ Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 ## Commande Linux
 
 -[kill](#kill)
-- [ls] (#ls)
+- [ls](#ls)
 - [pwd](#pwd)
 - [cd](#cd)
 - [ping](#ping)
@@ -16,14 +16,9 @@ Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 - [pwd](#pwd)
 - [cd](#cd)
 - [ping](#ping)
-- [chown](#chown)
-- [ssh](#ssh)
 - [top | htop](#top | htop)
 - [chown](#chown)
 - [cat](#cat)
-- [top | htop](#top | htop)
-- [chown] (#chown)
-- [cat] (#cat)
 
 ### [sudo](sudo)
 Used to escalate privileges of this user nor group with administrator's rights (root). After entering, password is not asked for five minutes
@@ -139,6 +134,7 @@ exemple :
 
 chown newowner:newownergroupe readme.md
 
+
 Elle déplace le fichier test vers le répertoire dir1. Ainsi, le premier argument de mv est la source et le second est la destination.
 
 
@@ -211,7 +207,8 @@ Special Symbols :
 La commande `ssh` permet de se connecter à distance à un serveur Linux de manière sécurisée. Sa syntaxe de 
 base est : `ssh user@adress_ÏP` ou avec un nom de domaine : `ssh user@nom_de_domaine`.
 
-##top | htop
+###top | htop
+
 la commande **top** permet d'afficher les processus Linux en cours d'execution.
 On appelle processus l'execution d'un programme. **top** va donc vous fournir une vue dynamique en temps réel du système en cours d'execution. 
 
