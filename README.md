@@ -8,7 +8,8 @@
 - [pwd](#pwd)
 - [cd](#cd)
 - [ping](#ping)
-- [chown] (#chown)
+- [chown](#chown)
+- [ssh](#ssh)
 
 ## Commande Linux
 
@@ -94,3 +95,8 @@ Special Symbols :
 > Utilisez les guillemets ("Dir Name") ou des bachslahes (Dir\ Name) pour gérer les répertoires contenant des espaces
 > Appuyez sur la touche `Tab` pour compléter automatiquement les noms de répertoires
 > Utilisez [`pwd`](#pwd) pour confirmer votre répertoire actuel
+
+
+### ssh
+La commande `ssh` permet de se connecter à distance à un serveur Linux de manière sécurisée. Sa syntaxe de 
+base est : `ssh user@adress_ÏP` ou avec un nom de domaine : `ssh user@nom_de_domaine`.
