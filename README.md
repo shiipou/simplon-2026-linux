@@ -1,13 +1,14 @@
 # simplon-2026-linux
 "Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 
+# Sommaire
 
-# Sommaire 
--[kill](#kill)
-- [ls] (#ls)
+- [kill](#kill)
+- [ls](#ls)
 - [pwd](#pwd)
 - [cd](#cd)
 - [ping](#ping)
+- [chown] (#chown)
 
 ## Commande Linux
 
@@ -43,6 +44,19 @@ En créant un alias, vous demandez à votre shell de remplacer un mot par une s�
 Par exemple, pour que ls ait une couleur sans avoir à taper le flag --color à chaque fois, on peut utiliser : alias ls="ls --color=auto"
 
 
+### chown
+
+Cela sert à le propriétaire et le groupe d'un fichier
+
+#### Commandes utiles
+
+chown (nouveau proprietaire) fichier/dossier
+chown (nouveau proprietaire):(nouveau groupe proprietaire) fichier/dossier
+chown :(nouveau groupe proprietaire) fichier/dossier
+
+exemple :
+
+chown newowner:newownergroupe readme.md
 
 ### pwd
 
