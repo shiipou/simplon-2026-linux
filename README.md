@@ -9,10 +9,9 @@
 - [cp](#cp)
 - [ping](#ping)
 - [cd](#cd)
-- [top | htop](#top | htop)
+- [top | htop](#top%20|%20htop)
 - [chown] (#chown)
 - [cat] (#cat)
-
 
 ## Commande Linux
 La commande Linux mv nous permet d'effectuer de nombreuses opérations sur les fichiers comme déplacer des fichiers, les renommer, créer des sauvegardes, etc. 
@@ -192,7 +191,9 @@ Special Symbols :
 
 > [!TIP]
 > Utilisez les guillemets ("Dir Name") ou des bachslahes (Dir\ Name) pour gérer les répertoires contenant des espaces
+> 
 > Appuyez sur la touche `Tab` pour compléter automatiquement les noms de répertoires
+> 
 > Utilisez [`pwd`](#pwd) pour confirmer votre répertoire actuel
 
 ##top | htop
@@ -243,6 +244,3 @@ sudo apt update
 
 sudo apt install htop
 ```
-
-
-
