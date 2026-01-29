@@ -9,9 +9,8 @@
 - [cd](#cd)
 - [ping](#ping)
 - [top | htop](#top%20|%20htop)
-
 - [chown] (#chown)
-- [cat] (#cat)
+- [cat](#cat)
 
 ## Commande Linux
 La commande Linux mv nous permet d'effectuer de nombreuses opérations sur les fichiers comme déplacer des fichiers, les renommer, créer des sauvegardes, etc. 
