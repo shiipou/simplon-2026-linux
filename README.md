@@ -191,7 +191,7 @@ Special Symbols :
 
 
 
-###top | htop
+### top | htop
 
 
 la commande **top** permet d'afficher les processus Linux en cours d'execution.
