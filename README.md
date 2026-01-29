@@ -8,7 +8,7 @@
 - [pwd](#pwd)
 - [cd](#cd)
 - [ping](#ping)
-- [top | htop](#top | htop)
+- [top | htop](#top%20|%20htop)
 
 - [chown] (#chown)
 - [cat] (#cat)
