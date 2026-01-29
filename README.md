@@ -16,6 +16,11 @@ Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 - [pwd](#pwd)
 - [cd](#cd)
 - [ping](#ping)
+- [chown](#chown)
+- [ssh](#ssh)
+- [top | htop](#top | htop)
+- [chown](#chown)
+- [cat](#cat)
 - [top | htop](#top | htop)
 - [chown] (#chown)
 - [cat] (#cat)
@@ -32,6 +37,7 @@ Used to escalate privileges of this user nor group with administrator's rights (
 ## Commande Linux
 La commande Linux mv nous permet d'effectuer de nombreuses opérations sur les fichiers comme déplacer des fichiers, les renommer, créer des sauvegardes, etc. 
 Bien qu'il n'autorise qu'un nombre limité d'options, nous pouvons combiner mv avec de nombreuses commandes de terminal Linux comme la commande find et créer des combinaisons de commandes plus complexes.  
+
 ### mv
 1 Déplacer des fichiers directement :
 Cette commande linux permet de déplacer et/ou renommer des fichiers dans les distributions linux et BSD.
@@ -89,6 +95,7 @@ Tout d’abord, nous avons supprimé tout le contenu de Test/, puis nous l’avo
 
 #### Conclusion :
  Il existe plus de 25 exemples sur linux terminal (cf :https://fr.linux-terminal.com/?p=398)
+
 ### kill 
 kill envoie un signal TERM ou kill à un processus pour le terminer
 Lorsqu'un programme ne répond pas ou qu'il ne peut pas être fermé par quelque moyen que ce soit, la commande kill va permettre de résdoudre ce genre de problème
@@ -195,10 +202,16 @@ Special Symbols :
 
 > [!TIP]
 > Utilisez les guillemets ("Dir Name") ou des bachslahes (Dir\ Name) pour gérer les répertoires contenant des espaces
+> 
 > Appuyez sur la touche `Tab` pour compléter automatiquement les noms de répertoires
+> 
 > Utilisez [`pwd`](#pwd) pour confirmer votre répertoire actuel
 
-###top | htop
+## ssh
+La commande `ssh` permet de se connecter à distance à un serveur Linux de manière sécurisée. Sa syntaxe de 
+base est : `ssh user@adress_ÏP` ou avec un nom de domaine : `ssh user@nom_de_domaine`.
+
+##top | htop
 la commande **top** permet d'afficher les processus Linux en cours d'execution.
 On appelle processus l'execution d'un programme. **top** va donc vous fournir une vue dynamique en temps réel du système en cours d'execution. 
 
