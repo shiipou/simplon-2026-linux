@@ -4,7 +4,7 @@ Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 # SUMMARY
 ## Commande Linux
 
--[kill](#kill)
+- [kill](#kill)
 - [ls](#ls)
 - [pwd](#pwd)
 - [cd](#cd)
@@ -16,15 +16,13 @@ Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 - [pwd](#pwd)
 - [grep](#grep)
 - [cd](#cd)
+- [ssh](#ssh)
 - [ping](#ping)
 - [chown](#chown)
 - [cat](#cat)
 - [top | htop](#top--htop)
 - [chown](#chown)
 - [cat](#cat)
-
-<<<<<<< HEAD
-=======
 
 ### [sudo](sudo)
 Used to escalate privileges of this user nor group with administrator's rights (root). After entering, password is not asked for five minutes
@@ -35,7 +33,6 @@ Used to escalate privileges of this user nor group with administrator's rights (
 -l : To list privileges of specified user
 -k : revoke password memory immediately
 
->>>>>>> 59986177cfe0d642e15412076f1ef611950fef1b
 ## Commande Linux
 La commande Linux mv nous permet d'effectuer de nombreuses opérations sur les fichiers comme déplacer des fichiers, les renommer, créer des sauvegardes, etc. 
 Bien qu'il n'autorise qu'un nombre limité d'options, nous pouvons combiner mv avec de nombreuses commandes de terminal Linux comme la commande find et créer des combinaisons de commandes plus complexes.  
@@ -122,12 +119,7 @@ Elle possède de nombreuses options, il peut donc être utile d’obtenir de l�
 Par exemple, pour coloriser la sortie de la commande ls, on peut utiliser ls --color=auto, la sortie de la commande ls est colorisée,
  et on peut apprécier la différence entre un répertoire et un fichier.
 
-<<<<<<< HEAD
-#### commande associer 
-=======
-
 ### commande associer 
->>>>>>> 59986177cfe0d642e15412076f1ef611950fef1b
 Mais saisir ls avec le flag color serait inefficace ; c’est pourquoi nous utilisons la commande alias.
 Elle permet de définir des alias temporaires dans votre session shell.
 En créant un alias, vous demandez à votre shell de remplacer un mot par une série de commandes.
@@ -144,10 +136,6 @@ chown :(nouveau groupe proprietaire) fichier/dossier
 exemple :
 
 chown newowner:newownergroupe readme.md
-<<<<<<< HEAD
-=======
-
->>>>>>> 59986177cfe0d642e15412076f1ef611950fef1b
 
 Elle déplace le fichier test vers le répertoire dir1. Ainsi, le premier argument de mv est la source et le second est la destination.
 
