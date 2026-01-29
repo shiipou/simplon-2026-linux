@@ -14,6 +14,7 @@ Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 - [kill](#kill)
 - [ls](#ls)
 - [pwd](#pwd)
+- [cp](#cp)
 - [grep](#grep)
 - [cd](#cd)
 - [ssh](#ssh)
@@ -179,6 +180,15 @@ Cette commande linux est un test entre votre ordinateur et l'hote cible qui perm
 -Mesure du temps entre le trajet aller-retour (Hote-Ordinateur-Hote)
 -Pourcentage de paquets perdus
 
+### cp
+
+La commande cp permet de faire une copie d'un fichier ( cp = copy).
+
+```bash
+cp bonjour bonsoir  # fait une copie exacte du fichier "bonjour" et l'appelle "bonsoir", mais le fichier "bonjour" est toujours là. 
+
+man cp              # pour avoir les option de cp
+```
 
 ### cd
 La commande `cd`sous Linux signifie "changer de répertoire" et sert à naviguer entre les répertoires du système de fichiers. C'est l'une des commandes les plus fondamentales et les plus fréquemment utilisées dans le terminal.
@@ -208,7 +218,7 @@ Special Symbols :
 La commande `ssh` permet de se connecter à distance à un serveur Linux de manière sécurisée. Sa syntaxe de 
 base est : `ssh user@adress_ÏP` ou avec un nom de domaine : `ssh user@nom_de_domaine`.
 
-### top | htop
+## top | htop
 
 la commande **top** permet d'afficher les processus Linux en cours d'execution.
 On appelle processus l'execution d'un programme. **top** va donc vous fournir une vue dynamique en temps réel du système en cours d'execution. 
