@@ -12,26 +12,23 @@ Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 Cette commande linux fait ........
 
 ### cd
-This command Linux `cd` stands for change directory and is used to navigate between directories in the file system. It is one of the most fundamental and frequently used commands in the terminal.
-Key Usage Examples : 
-- `cd ~` or `cd` : Returns to the user's home directory
-- `cd /` : Changes to the root directory
-- `cd ..` : Moves to the parent directory
-- `cd -` : Switches back to the previous directory
-- `cd directory name` : Navigates to a subdirectory using a relative path
-- `cd /full/path/to/directory` : Uses an absolute path to go to a specific location
+La commande `cd`sous Linux signifie "changer de répertoire" et sert à naviguer entre les répertoires du système de fichiers. C'est l'une des commandes les plus fondamentales et les plus fréquemment utilisées dans le terminal.
+Exemples d'utilisation clés :
+
+- `cd ~` or `cd` : Retourne au répertoire personnel de l'utilisateur
+- `cd /` : Passe au répertoire racine
+- `cd ..` : Passe au répertoire parent
+- `cd -` : Revient au répertoire précédent
+- `cd directory name` : Navigue vers un sous-répertoire à l'aide d'un chemin relatif
+- `cd /full/path/to/directory` : Utilise un chemin absolu pour accéder à un emplacement spécifique
 
 Special Symbols :
-- `.` : Refers to the current directory
-- `..`: Refers to the parent directory
-- `~` : Represents the home directory
-- `-` : Switches to the previous working directory
+- `.` : Fait référence au répertoire actuel (exemple `cd.` ne fait rien
+- `..`: Fait référence au répertoire parent
+- `~` : Représente le répertoire d'accueil
+- `-` : Passe au répertoire de travail précédent
 
 > [!TIP]
-> Use quotes ("Dir Name") or backslashes (Dir\ Name) to handle directories
-> Press Tab to auto-complete directory names
-> Use [`pwd`](#pwd) to confirm your current directory
-
-
-#### hfjkdghk
-kjhfdklgf:
+> Utilisez les guillemets ("Dir Name") ou des bachslahes (Dir\ Name) pour gérer les répertoires contenant des espaces
+> Appuyez sur la touche `Tab` pour compléter automatiquement les noms de répertoires
+> Utilisez [`pwd`](#pwd) pour confirmer votre répertoire actuel
