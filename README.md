@@ -4,7 +4,7 @@ Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 # SUMMARY
 ## Commande Linux
 
--[kill](#kill)
+- [kill](#kill)
 - [ls](#ls)
 - [pwd](#pwd)
 - [ping](#ping)
@@ -14,10 +14,12 @@ Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 - [ls](#ls)
 - [cp](#cp)
 - [grep](#grep)
+- [cd](#cd)
+- [ssh](#ssh)
+- [ping](#ping)
 - [chown](#chown)
 - [top | htop](#top--htop)
 - [cat](#cat)
-
 
 ### [sudo](sudo)
 Used to escalate privileges of this user nor group with administrator's rights (root). After entering, password is not asked for five minutes
@@ -114,7 +116,6 @@ Elle possède de nombreuses options, il peut donc être utile d’obtenir de l�
 Par exemple, pour coloriser la sortie de la commande ls, on peut utiliser ls --color=auto, la sortie de la commande ls est colorisée,
  et on peut apprécier la différence entre un répertoire et un fichier.
 
-
 ### commande associer 
 Mais saisir ls avec le flag color serait inefficace ; c’est pourquoi nous utilisons la commande alias.
 Elle permet de définir des alias temporaires dans votre session shell.
@@ -132,6 +133,7 @@ chown :(nouveau groupe proprietaire) fichier/dossier
 exemple :
 
 chown newowner:newownergroupe readme.md
+
 Elle déplace le fichier test vers le répertoire dir1. Ainsi, le premier argument de mv est la source et le second est la destination.
 
 ### cat
