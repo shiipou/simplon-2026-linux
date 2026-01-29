@@ -20,6 +20,9 @@ Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 - [chown](#chown)
 - [cat](#cat)
 - [top | htop](#top%20|%20htop)
+- [chown](#chown)
+- [cat](#cat)
+
 
 ### [sudo](sudo)
 Used to escalate privileges of this user nor group with administrator's rights (root). After entering, password is not asked for five minutes
