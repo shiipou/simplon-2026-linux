@@ -243,7 +243,7 @@ MiB Swap:   4096.0 total,   4096.0 free,      0.0 used.  15492.3 avail Mem
 Là où top affiche une liste statique rafraîchie périodiquement, **htop** propose une expérience interactive morderne.
 vous pouvez naviguer avec les flèches ou la souris, filtrer en temps réel, trier par n’importe quelle colonne et agir directement sur les processus sans quitter l’interface
 
-####htop vs top : pourquoi htop est mieux?
+#### htop vs top : pourquoi htop est mieux?
 
 
 **Navigation visuelle** : au lieu de taper des commandes cryptiques, vous naviguez avec les flèches et agissez avec les touches de fonction
