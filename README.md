@@ -8,7 +8,7 @@
 - [cd](#cd)
 - [ping](#ping)
 - [chown] (#chown)
-- [cat] (#cat)
+- [cat](#cat)
 
 
 ## Commande Linux
