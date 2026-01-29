@@ -1,7 +1,30 @@
 # simplon-2026-linux
-<<<<<<< HEAD
-# Sommaire
-- [man] (#man)
+Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
+
+# SUMMARY
+## Commande Linux
+
+- [kill](#kill)
+- [ls](#ls)
+- [pwd](#pwd)
+- [cd](#cd)
+- [ping](#ping)
+- [sudo](#sudo)
+- [mv](#mv)
+- [kill](#kill)
+- [ls](#ls)
+- [pwd](#pwd)
+- [cp](#cp)
+- [grep](#grep)
+- [cd](#cd)
+- [ssh](#ssh)
+- [ping](#ping)
+- [chown](#chown)
+- [cat](#cat)
+- [top | htop](#top--htop)
+- [chown](#chown)
+- [cat](#cat)
+- [man](#man)
 
 ## Commande man
 man est une commande UNIX permettant d'accéder aux pages de manuel installées sur le système. La plupart des programmes fournissent une page de manuel les documentant,
@@ -29,7 +52,7 @@ Les pages de manuel sont réparties dans des sections distinctes:
 
 Les numéros de sections dont souvent spécifiés entre parenthèses après le nom de la page, comme ci-dessus.
 
-Il arrive (rarement) que deux pages de manuel aient le même nom mais soient dans des sections différentes ; c'est le cas de man(1) et man(7) ou de printf(1) et printf(3) par exemple. Il est donc possible de spécifier dans quelle section chercher la page de manuel, en indiquant son numéro juste avant le nom de la page ou en spécifiant le paramètre -s.
+Il arrive (rarement) que deux pages de manuel aient le même nom mais soient dans des sections différentes ; c'est le cas de man(1) et man(7) ou de printf(1) et printf(3) par exemple. Il est donc possible de spécifier dans quelle section>
 Par exemple, pour obtenir la page de manuel de man(7) (qui parle de la syntaxe des pages de manuel), l'on fera :
 
 "man 7 man"
@@ -38,26 +61,19 @@ Par exemple, pour obtenir la page de manuel de man(7) (qui parle de la syntaxe d
 
 https://doc.ubuntu-fr.org/man
 
+### [sudo](sudo)
+Used to escalate privileges of this user nor group with administrator's rights (root). After entering, password is not asked for five minutes
 
-Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
-=======
-"Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
-
-# Sommaire
-- [mv](#mv)
-- [kill](#kill)
-- [ls](#ls)
-- [pwd](#pwd)
-- [cd](#cd)
-- [ping](#ping)
-- [top | htop](#top | htop)
-- [chown] (#chown)
-- [cat] (#cat)
-
+#### [prefixes](sudo)
+-u : To use an user privileges
+-i : To use root privileges
+-l : To list privileges of specified user
+-k : revoke password memory immediately
 
 ## Commande Linux
 La commande Linux mv nous permet d'effectuer de nombreuses opérations sur les fichiers comme déplacer des fichiers, les renommer, créer des sauvegardes, etc. 
 Bien qu'il n'autorise qu'un nombre limité d'options, nous pouvons combiner mv avec de nombreuses commandes de terminal Linux comme la commande find et créer des combinaisons de commandes plus complexes.  
+
 ### mv
 1 Déplacer des fichiers directement :
 Cette commande linux permet de déplacer et/ou renommer des fichiers dans les distributions linux et BSD.
@@ -115,8 +131,8 @@ Tout d’abord, nous avons supprimé tout le contenu de Test/, puis nous l’avo
 
 #### Conclusion :
  Il existe plus de 25 exemples sur linux terminal (cf :https://fr.linux-terminal.com/?p=398)
-### kill 
 
+### kill 
 kill envoie un signal TERM ou kill à un processus pour le terminer
 Lorsqu'un programme ne répond pas ou qu'il ne peut pas être fermé par quelque moyen que ce soit, la commande kill va permettre de résdoudre ce genre de problème
 
@@ -131,28 +147,25 @@ kill firefox
 !!! Attention : avec cette commande, il y à risque d'éffacer accidentellement le travail que vous avez effectué !!! 
 
  
-## la commande ls
+### la commande ls
 la commande ls permet de lister le contenu du répertoire que l'on souhaite (le répertoire courant par defaut), y compris les fichiers et autre répertoires imbriqués
+
 
 ### commande utile
 Elle possède de nombreuses options, il peut donc être utile d’obtenir de l’aide en utilisant l’option --help. Cette option renvoie toutes les options que vous pouvez utiliser avec ls.
 Par exemple, pour coloriser la sortie de la commande ls, on peut utiliser ls --color=auto, la sortie de la commande ls est colorisée,
  et on peut apprécier la différence entre un répertoire et un fichier.
 
-
-#### commande associer 
+### commande associer 
 Mais saisir ls avec le flag color serait inefficace ; c’est pourquoi nous utilisons la commande alias.
 Elle permet de définir des alias temporaires dans votre session shell.
 En créant un alias, vous demandez à votre shell de remplacer un mot par une série de commandes.
 Par exemple, pour que ls ait une couleur sans avoir à taper le flag --color à chaque fois, on peut utiliser : alias ls="ls --color=auto"
 
-
 ### chown
-
 Cela sert à le propriétaire et le groupe d'un fichier
 
 #### Commandes utiles
-
 chown (nouveau proprietaire) fichier/dossier
 chown (nouveau proprietaire):(nouveau groupe proprietaire) fichier/dossier
 chown :(nouveau groupe proprietaire) fichier/dossier
@@ -160,10 +173,8 @@ chown :(nouveau groupe proprietaire) fichier/dossier
 exemple :
 
 chown newowner:newownergroupe readme.md
->>>>>>> a87b0fa70a44d3c015093eeec9e53f531f1319a4
 
 Elle déplace le fichier test vers le répertoire dir1. Ainsi, le premier argument de mv est la source et le second est la destination.
-
 
 ### cat
 The cat command stands for "concatenante" and is primarily used to read, display, and concatenate text fles. 
@@ -173,6 +184,7 @@ The basic syntax of the cat command is straightforward :
 cat [OPTION] [FILE]
 	- [OPTION]... refers to the various options you con use with cat to modifiy its behavior.
 	- [FILE]... represents one or more files you want to display or concatenate. 
+
 ### Example
 To display the content of a single file, you can use:
 cat filename.txt
@@ -181,8 +193,8 @@ To concatenate multiple files into a single output, you can use:
 cat file1.txt file2.txt > combined.txt
 
 In this example, the content of file1.txt and file2.txt is combined and redirected into combined.txt.
-### Advanced Cat Command Options
 
+### Advanced Cat Command Options
 Option	Description
 -A	Show all characters, including non-printing characters and line endings.
 -b	Number non-blank output lines.
@@ -198,13 +210,21 @@ elle confirme votre position et d'éviter les erreures de chemin et d'éxecuter 
 pwd signifie "imprimer le répertoire de travail.
 
 ### ping
-
 Cette commande linux est un test entre votre ordinateur et l'hote cible qui permettra de le determiner:
 
 -statut de l'hote cible : s'il est joignable
 -Mesure du temps entre le trajet aller-retour (Hote-Ordinateur-Hote)
 -Pourcentage de paquets perdus
 
+### cp
+
+La commande cp permet de faire une copie d'un fichier ( cp = copy).
+
+```bash
+cp bonjour bonsoir  # fait une copie exacte du fichier "bonjour" et l'appelle "bonsoir", mais le fichier "bonjour" est toujours là. 
+
+man cp              # pour avoir les option de cp
+```
 
 ### cd
 La commande `cd`sous Linux signifie "changer de répertoire" et sert à naviguer entre les répertoires du système de fichiers. C'est l'une des commandes les plus fondamentales et les plus fréquemment utilisées dans le terminal.
@@ -225,11 +245,16 @@ Special Symbols :
 
 > [!TIP]
 > Utilisez les guillemets ("Dir Name") ou des bachslahes (Dir\ Name) pour gérer les répertoires contenant des espaces
+> 
 > Appuyez sur la touche `Tab` pour compléter automatiquement les noms de répertoires
+> 
 > Utilisez [`pwd`](#pwd) pour confirmer votre répertoire actuel
 
+## ssh
+La commande `ssh` permet de se connecter à distance à un serveur Linux de manière sécurisée. Sa syntaxe de 
+base est : `ssh user@adress_ÏP` ou avec un nom de domaine : `ssh user@nom_de_domaine`.
 
-##top | htop
+## top | htop
 
 la commande **top** permet d'afficher les processus Linux en cours d'execution.
 On appelle processus l'execution d'un programme. **top** va donc vous fournir une vue dynamique en temps réel du système en cours d'execution. 
@@ -262,7 +287,7 @@ MiB Swap:   4096.0 total,   4096.0 free,      0.0 used.  15492.3 avail Mem
 Là où top affiche une liste statique rafraîchie périodiquement, **htop** propose une expérience interactive morderne.
 vous pouvez naviguer avec les flèches ou la souris, filtrer en temps réel, trier par n’importe quelle colonne et agir directement sur les processus sans quitter l’interface
 
-####htop vs top : pourquoi htop est mieux?
+#### htop vs top : pourquoi htop est mieux?
 
 
 **Navigation visuelle** : au lieu de taper des commandes cryptiques, vous naviguez avec les flèches et agissez avec les touches de fonction
@@ -278,5 +303,47 @@ sudo apt update
 sudo apt install htop
 ```
 
+### grep
+
+Cette commande linux permet de rechercher des occurences dans des fichiers et renvoie chaques lignes des fichiers contenant ces occurences.
+
+#### Options d'utilisation
+
+Voici une liste des options essentielles utilisables avec la commade grep :
+
+> [!important]
+> -i : permet d'ignorer la casse.
+> -v : permet de rechercher les lignes SANS l'occurence.
+> -n : permet d'afficher les numéros de lignes.
+> -c : permet de compter les lignes.
+> -r : permet d'effectuer une recherche récursive.
+> -l : permet d'afficher uniquement le nom des fichiers dans lesquels l'occurence est présente.
+
+Voici une liste de quelques options avancées utilisables avec grep :
+
+> [!Pour aller plus loin]-
+> -w : permet d'utiliser le mot entier uniquement.
+> -o : permet d'afficher uniquement la correspondance.
+> -A x : permet d'afficher x lignes après chaque occurence.
+> -B x : permet d'afficher x lignes avant chaque occurence.
+> -C x : permet d'afficher x lignes avant et après chaque occurence.
+
+
+#### Exemples d'utilisation
+
+> [!example]
+> grep toto texte1 texte2
+
+Dans cet exemple, on recherche le texte "toto" dans les fichiers texte1 et texte2.
+
+
+> [example]
+> grep toto -C 3 toto texte1
+
+Ici, on recherche les 3 lignes avant et après le texte "toto" dans le fichier texte1.
+
+#### Sources
+
+Pour plus d'informations, voici une source détaillant la commande grep : https://blog.stephane-robert.info/docs/admin-serveurs/linux/grep/
 
 >>>>>>> 704032d5ee8544dd062d08f9c77431e4571df836
