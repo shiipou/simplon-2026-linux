@@ -122,7 +122,6 @@ chown :(nouveau groupe proprietaire) fichier/dossier
 exemple :
 
 chown newowner:newownergroupe readme.md
->>>>>>> a87b0fa70a44d3c015093eeec9e53f531f1319a4
 
 Elle déplace le fichier test vers le répertoire dir1. Ainsi, le premier argument de mv est la source et le second est la destination.
 
