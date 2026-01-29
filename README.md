@@ -1,14 +1,19 @@
 # simplon-2026-linux
 "Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 
-
 # Sommaire 
--[kill](#kill)
-- [ls] (#ls)
+- [kill](#kill)
+- [ls](#ls)
 - [pwd](#pwd)
 - [cd](#cd)
 - [ping](#ping)
+<<<<<<< HEAD
 - [top | htop](#top | htop)
+=======
+- [chown] (#chown)
+- [cat] (#cat)
+
+>>>>>>> 52a3c265be153d36520724b9c5f7e2a90ceb96da
 
 ## Commande Linux
 
@@ -44,8 +49,50 @@ En créant un alias, vous demandez à votre shell de remplacer un mot par une s�
 Par exemple, pour que ls ait une couleur sans avoir à taper le flag --color à chaque fois, on peut utiliser : alias ls="ls --color=auto"
 
 
+### chown
+
+Cela sert à le propriétaire et le groupe d'un fichier
+
+#### Commandes utiles
+
+chown (nouveau proprietaire) fichier/dossier
+chown (nouveau proprietaire):(nouveau groupe proprietaire) fichier/dossier
+chown :(nouveau groupe proprietaire) fichier/dossier
+
+exemple :
+
+chown newowner:newownergroupe readme.md
 
 ### pwd
+
+
+### cat
+The cat command stands for "concatenante" and is primarily used to read, display, and concatenate text fles. 
+
+#### Basic syntax
+The basic syntax of the cat command is straightforward :
+cat [OPTION] [FILE]
+	- [OPTION]... refers to the various options you con use with cat to modifiy its behavior.
+	- [FILE]... represents one or more files you want to display or concatenate. 
+### Example
+To display the content of a single file, you can use:
+cat filename.txt
+
+To concatenate multiple files into a single output, you can use:
+cat file1.txt file2.txt > combined.txt
+
+In this example, the content of file1.txt and file2.txt is combined and redirected into combined.txt.
+### Advanced Cat Command Options
+
+Option	Description
+-A	Show all characters, including non-printing characters and line endings.
+-b	Number non-blank output lines.
+-e	Equivalent to -vE, shows non-printing characters and ends lines with $.
+-E	Display $ at the end of each line.
+-n	Number all output lines.
+-s	Squeeze multiple adjacent blank lines into a single blank line.
+-T	Display tab characters as ^I.
+-v	Show non-printing characters, except for tabs and end-of-line characters.
 
 Cette commande linux affiche le chemin absolu de votre emplacement actuel dans le systeme de fichier.
 elle confirme votre position et d'éviter les erreures de chemin et d'éxecuter des scripts de manière fiable.
@@ -84,6 +131,7 @@ Special Symbols :
 
 
 
+<<<<<<< HEAD
 ###top | htop
 
 la commande **top** permet d'afficher les processus Linux en cours d'execution.
@@ -133,3 +181,5 @@ sudo apt update
 sudo apt install htop
 ```
 
+=======
+>>>>>>> 52a3c265be153d36520724b9c5f7e2a90ceb96da
