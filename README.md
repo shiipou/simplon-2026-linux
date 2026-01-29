@@ -1,7 +1,6 @@
 # simplon-2026-linux
 Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 
-<<<<<<< HEAD
 # SUMMARY
 ## Commande Linux
 
@@ -30,7 +29,6 @@ Used to escalate privileges of this user nor group with administrator's rights (
 -k : revoke password memory immediately
 
 ### kill 
-
 kill envoie un signal TERM ou kill à un processus pour le terminer
 Lorsqu'un programme ne répond pas ou qu'il ne peut pas être fermé par quelque moyen que ce soit, la commande kill va permettre de résdoudre ce genre de problème
 
@@ -62,11 +60,9 @@ En créant un alias, vous demandez à votre shell de remplacer un mot par une s�
 Par exemple, pour que ls ait une couleur sans avoir à taper le flag --color à chaque fois, on peut utiliser : alias ls="ls --color=auto"
 
 ### chown
-
 Cela sert à le propriétaire et le groupe d'un fichier
 
 #### Commandes utiles
-
 chown (nouveau proprietaire) fichier/dossier
 chown (nouveau proprietaire):(nouveau groupe proprietaire) fichier/dossier
 chown :(nouveau groupe proprietaire) fichier/dossier
@@ -86,6 +82,7 @@ The basic syntax of the cat command is straightforward :
 cat [OPTION] [FILE]
 	- [OPTION]... refers to the various options you con use with cat to modifiy its behavior.
 	- [FILE]... represents one or more files you want to display or concatenate. 
+
 ### Example
 To display the content of a single file, you can use:
 cat filename.txt
@@ -94,8 +91,8 @@ To concatenate multiple files into a single output, you can use:
 cat file1.txt file2.txt > combined.txt
 
 In this example, the content of file1.txt and file2.txt is combined and redirected into combined.txt.
-### Advanced Cat Command Options
 
+### Advanced Cat Command Options
 Option	Description
 -A	Show all characters, including non-printing characters and line endings.
 -b	Number non-blank output lines.
@@ -111,7 +108,6 @@ elle confirme votre position et d'éviter les erreures de chemin et d'éxecuter 
 pwd signifie "imprimer le répertoire de travail.
 
 ### ping
-
 Cette commande linux est un test entre votre ordinateur et l'hote cible qui permettra de le determiner:
 
 -statut de l'hote cible : s'il est joignable
@@ -142,7 +138,6 @@ Special Symbols :
 > Utilisez [`pwd`](#pwd) pour confirmer votre répertoire actuel
 
 ###top | htop
-
 la commande **top** permet d'afficher les processus Linux en cours d'execution.
 On appelle processus l'execution d'un programme. **top** va donc vous fournir une vue dynamique en temps réel du système en cours d'execution. 
 
