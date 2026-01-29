@@ -7,22 +7,18 @@ Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 - [kill](#kill)
 - [ls](#ls)
 - [pwd](#pwd)
-- [cd](#cd)
 - [ping](#ping)
 - [sudo](#sudo)
 - [mv](#mv)
 - [kill](#kill)
 - [ls](#ls)
-- [pwd](#pwd)
 - [cp](#cp)
 - [grep](#grep)
 - [cd](#cd)
 - [ssh](#ssh)
 - [ping](#ping)
 - [chown](#chown)
-- [cat](#cat)
 - [top | htop](#top--htop)
-- [chown](#chown)
 - [cat](#cat)
 - [man](#man)
 
@@ -226,6 +222,8 @@ cp bonjour bonsoir  # fait une copie exacte du fichier "bonjour" et l'appelle "b
 man cp              # pour avoir les option de cp
 ```
 
+
+
 ### cd
 La commande `cd`sous Linux signifie "changer de répertoire" et sert à naviguer entre les répertoires du système de fichiers. C'est l'une des commandes les plus fondamentales et les plus fréquemment utilisées dans le terminal.
 Exemples d'utilisation clés :
@@ -250,11 +248,47 @@ Special Symbols :
 > 
 > Utilisez [`pwd`](#pwd) pour confirmer votre répertoire actuel
 
+
+### chmod
+chmod est la commande Linux pour attribuer, changer, modifier ou supprimer les permissions de fichiers et répertoires.
+
+Syntaxe:
+- chmod [OPTIONS] MODE fichier
+    - OPTIONS: paramètres de la commande
+    - MODE: permissions à expliquer soit en octal (texte), soit en décimale (chiffre).
+    - fichier: nom du fichier
+
+- Exemples:
+    -   U   |   G   |   W   |   COMMAND
+
+        rwx |  rwx  |  rwx  | chmod 777 filename
+        rwx |  rwx  |  r-x  | chmod 775 filename
+        rwx |  r-x  |  r-x  | chmod 755 filename
+        rw- |  rw-  |  r--  | chmod 664 filename
+        rw- |  r--  |  r--  | chmod 644 filename
+
+       User | Group | World |
+
+     r = Readable
+     w = Writable
+     x = Executable
+     - = None
+
+        - Owner | Group | Any | All
+   Read | 400   | 040   | 004 | 444
+   Write| 200   | 020   | 002 | 222
+   Exec | 100   | 010   | 001 | 111
+   All  | 700   | 070   | 007 | 777
+
+
 ## ssh
 La commande `ssh` permet de se connecter à distance à un serveur Linux de manière sécurisée. Sa syntaxe de 
 base est : `ssh user@adress_ÏP` ou avec un nom de domaine : `ssh user@nom_de_domaine`.
 
-## top | htop
+
+###top | htop
+##top | htop
+
 
 la commande **top** permet d'afficher les processus Linux en cours d'execution.
 On appelle processus l'execution d'un programme. **top** va donc vous fournir une vue dynamique en temps réel du système en cours d'execution. 
