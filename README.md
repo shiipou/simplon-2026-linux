@@ -9,10 +9,9 @@ Cheatsheet sur les commandes Linux écrite par la promo CDA Niort de 2026
 
 ### pwd
 
-Cette commande linux fait ........
-
-#### hfjkdghk
-kjhfdklgf:
+Cette commande linux affiche le chemin absolu de votre emplacement actuel dans le systeme de fichier.
+elle confirme votre position et d'éviter les erreures de chemin et d'éxecuter des scripts de manière fiable.
+pwd signifie "imprimer le répertoire de travail.
 
 ### ping
 
