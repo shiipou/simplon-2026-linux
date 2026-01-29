@@ -8,12 +8,7 @@
 - [pwd](#pwd)
 - [cd](#cd)
 - [ping](#ping)
-- [chown](#chown)
-- [ssh](#ssh)
-- [top | htop](#top | htop)
-- [chown](#chown)
-- [cat](#cat)
-- [top | htop](#top | htop)
+- [top | htop](#top%20|%20htop)
 - [chown] (#chown)
 - [cat](#cat)
 
@@ -123,6 +118,7 @@ exemple :
 
 chown newowner:newownergroupe readme.md
 
+
 Elle déplace le fichier test vers le répertoire dir1. Ainsi, le premier argument de mv est la source et le second est la destination.
 
 
@@ -192,12 +188,9 @@ Special Symbols :
 > Utilisez [`pwd`](#pwd) pour confirmer votre répertoire actuel
 
 
-## ssh
-La commande `ssh` permet de se connecter à distance à un serveur Linux de manière sécurisée. Sa syntaxe de 
-base est : `ssh user@adress_ÏP` ou avec un nom de domaine : `ssh user@nom_de_domaine`.
+
 
 ###top | htop
-##top | htop
 
 
 la commande **top** permet d'afficher les processus Linux en cours d'execution.
