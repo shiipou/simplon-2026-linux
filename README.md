@@ -12,6 +12,9 @@
 - [top | htop](#top | htop)
 - [chown](#chown)
 - [cat](#cat)
+- [top | htop](#top | htop)
+- [chown] (#chown)
+- [cat] (#cat)
 
 ## Commande Linux
 
@@ -135,6 +138,8 @@ La commande `ssh` permet de se connecter à distance à un serveur Linux de mani
 base est : `ssh user@adress_ÏP` ou avec un nom de domaine : `ssh user@nom_de_domaine`.
 
 ###top | htop
+##top | htop
+
 
 la commande **top** permet d'afficher les processus Linux en cours d'execution.
 On appelle processus l'execution d'un programme. **top** va donc vous fournir une vue dynamique en temps réel du système en cours d'execution. 
